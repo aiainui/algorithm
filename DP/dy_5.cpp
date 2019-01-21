@@ -13,9 +13,13 @@ int n;
 void rent()
 {
     int i,j,k,d;
+    //从三个站点的子问题出发
     for(d=3; d <= n; d++){
+	//m[i][j] 起始位置i
         for(i=1; i <= n-d+1; i++){
-            j = i+d-1;
+            //限定j最大值为当前d限定的宽度
+	    j = i+d-1;
+	    //子问题再拆分，k为拆分点
             for(k=i+1; k<j; k++){
                 int temp;
                 temp = m[i][k] + m[k][j];
