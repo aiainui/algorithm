@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 //求解Sentece1 和 Sentece2 的最长公共子序列
 int LCSByDP(const vector<string>& vSentece1, const vector<string>& vSentece2)
 {
@@ -22,4 +27,21 @@ int LCSByDP(const vector<string>& vSentece1, const vector<string>& vSentece2)
 	}
 
 	return c[vSentece1.size()][vSentece2.size()];
+}
+
+int main()
+{
+	vector<std::string> t1;
+	vector<std::string> t2;
+	t1.push_back("高");
+	t1.push_back("大");
+	t1.push_back("人");
+	t1.push_back("物");
+
+	t2.push_back("高");
+	t2.push_back("大");
+	t2.push_back("啊");
+	t2.push_back("物");
+	cout << LCSByDP(t1, t2) << endl;
+	return 0;
 }
