@@ -3,7 +3,7 @@
 
 using namespace std;
 
-
+//求解两个串的最大公共子串
 int LCSSByDP(const vector<string>& vSentece1, const vector<string>& vSentece2)
 {
 	int nMax = 0;
