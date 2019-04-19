@@ -8,8 +8,10 @@ int LCSSByDP(const vector<string>& vSentece1, const vector<string>& vSentece2)
 {
 	int nMax = 0;
 	int **c = new int*[vSentece1.size()]; //共有length1+1行
-	for (int i = 0; i < vSentece1.size(); i++)
+	for (int i = 0; i < vSentece1.size(); i++){
 		c[i] = new int[vSentece2.size()];//共有length2+1列
+		memset(c[i], 0, sizeof(c[i]));
+	}
 
 	for (int i = 0; i < vSentece1.size(); i++)
 	for (int j = 0; j < vSentece2.size(); j++)
