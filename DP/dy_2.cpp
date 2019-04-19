@@ -12,7 +12,7 @@ int LCSSByDP(const vector<string>& vSentece1, const vector<string>& vSentece2)
 		c[i] = new int[vSentece2.size()];//共有length2+1列
 		memset(c[i], 0, sizeof(c[i]));
 	}
-
+	//上面5行代码也可替换为 std::vector(vSentece1.size(), std::vector(vSentece2.size(), 0)) c;
 	for (int i = 0; i < vSentece1.size(); i++)
 	for (int j = 0; j < vSentece2.size(); j++)
 	{
