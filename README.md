@@ -1,5 +1,5 @@
 # algorithm
-Common algorithm（c++ implementation）
+Common algorithm（c++/java/python implementation）
 
 ## 1 回溯
 ## 2 分支限界
