@@ -8,7 +8,7 @@ import java.util.Arrays;
  *1.构建一个大根堆
  *2.固定个最大值 剩余的数进行构建大根堆 重复以上过程
  */
-public class HeapSort02 {
+public class HeapSort {
 	public static void main(String[] args) {
 		int arr[]={9,5,3,2,1};
 		heapSort(arr);
