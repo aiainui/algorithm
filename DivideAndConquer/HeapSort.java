@@ -3,10 +3,10 @@ package cn.bdqn.dao;
 import java.util.Arrays;
 
 /**
- * ¶ÑÅÅĞò
+ * å †æ’åº
  * @author suifeng
- *1.¹¹½¨Ò»¸ö´ó¸ù¶Ñ
- *2.¹Ì¶¨¸ö×î´óÖµ Ê£ÓàµÄÊı½øĞĞ¹¹½¨´ó¸ù¶Ñ ÖØ¸´ÒÔÉÏ¹ı³Ì
+ *1.æ„å»ºä¸€ä¸ªå¤§æ ¹å †
+ *2.å›ºå®šä¸ªæœ€å¤§å€¼ å‰©ä½™çš„æ•°è¿›è¡Œæ„å»ºå¤§æ ¹å † é‡å¤ä»¥ä¸Šè¿‡ç¨‹
  */
 public class HeapSort02 {
 	public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class HeapSort02 {
 		System.out.println(Arrays.toString(arr));
 	}
 	public static void heapSort(int arr[]){
-		//¹¹½¨Ò»¸ö´ó¸ù¶Ñ
+		//æ„å»ºä¸€ä¸ªå¤§æ ¹å †
 		for (int i = arr.length/2-1; i >= 0; i--) {
 			heap(arr,i,arr.length);
 		}
